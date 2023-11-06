@@ -50,6 +50,8 @@ if connection:
         if results:
             col_names = [i[0] for i in cursor.description]
             st.table([col_names] + results)
+        
+        # Non tabular format
         # for row in results:
         #     st.write(row)
 
